@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua; text-align:center; padding: 202px;color:white; border-color:blue;">
+    <div class="container" style="background-color:black;padding: 100px;" >
+        <form action="add" method="POST" style=>
+            {% csrf_token %}
+            <h1 style="color:white">This is Calculator</h1>
+            1st number &nbsp; &nbsp;<input type="Number" name="txt1" id="text1" placeholder="Enter 1st Number"> <br> <br>
+            2nd number&nbsp; &nbsp;<input type="Number" name="txt2" id="txt2" placeholder="Enter 1st Number"> <br> <br>
+           &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="Submit" value="Add" name="btnadd" id="btnadd"style="background-color:red">
+            <input type="Submit" value="Sub" name="btnsub" id="btnsub"style="background-color:red">
+            <input type="Submit" value="Mul" name="btnmul" id="btnmul"style="background-color:red">
+            <input type="Submit" value="Div" name="btndiv" id="btndiv"style="background-color:red">
+        </form>
+    </div>
+</body>
+</html>
